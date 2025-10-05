@@ -1,7 +1,6 @@
 import pytest
 from app import app
 @pytest.fixture
-#11
 def client():
     app.config['TESTING'] = True
     with app.test_client() as client:
