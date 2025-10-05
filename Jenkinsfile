@@ -18,7 +18,7 @@ pipeline {
         }
         stage('Checkout') {
             steps {
-                git url: 'git@github.com:super-sausage/myflaskapp.git'
+                git url: 'git@github.com:super-sausage/myflaskapp.git', branch: 'main'
             }
         }
         stage('Fix pip') {
