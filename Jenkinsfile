@@ -18,7 +18,7 @@ pipeline {
         }
         stage('Checkout') {
             steps {
-                git url: 'https://github.com/super-sausage/myflaskapp.git', branch: 'main'
+                git url: 'https://ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCY8k79L1trY2fDhGBZ0blaSzKpY+NAJtgcSS0V88UVNLdtEOGNvZXjB0Lc/et0WLi4ixcvWq/VHvm6TlAkzNwHtOzeMS62Im5oE6JtrXXhbgN+icAlyk/oTgYWhYsr6kQO/uePxaai5jNzoWxHFRu9GLPzKkBO3DTXtuA7OX7Fpqx7+L/ex5EH+gHIOjSkj3YYrbMGPMbZ0MtPzwV9ShJJTQJNppe57JwUNTeAl6o5LBNpxlaiytpUgDAiFOKkLH5T1W9RGtGrNOzC6xoll4oUexfZkUDNB4nsJbpLzHoHNmBL3YwqKMiS5YLxk3A3xrxq0mPMIjn5/Fw6yGLirGcBETaduVZR37y8DzkcdclkgwVIYyYzEJM+PPVLR8hjKhLU7XJDg8cGsK9Md2jfiwFDdHT6uhyic216Xo6l7kEpfkCmdQWqq2q0beIx1snGrJjdkMHVOKvzD1hclK9MsNUHiTL5lfSaQHSlkpEwaUrgH6gT9x6Xn3Y2dZ2Ft7ttH9wgQPK2R0XhC+qOrZxSQlIODYlOMIqBNoQHqqDMX8VcGdrp3QvR99hdTx59T5VNFBze7nLuXmeEfdc/yPQFTvV7bu1+jirfKLXg7kbJrihrZyDNBH//cx2o4opP3M0DKo96cOI6iMWpe+OsDoETb5fz12L7q6UHnzi3al0Is+fLJw== 华硕@LAPTOP-999746UQ@github.com/super-sausage/myflaskapp.git', branch: 'main'
             }
         }
         stage('Fix pip') {
