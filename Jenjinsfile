@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        PYTHON_PATH = 'E:\python\Scripts\python.exe'
+        PYTHON_PATH = 'E:\python\Scripts\python.exe '
     }
 
     stages {
@@ -18,7 +18,7 @@ pipeline {
         }
         stage('Checkout') {
             steps {
-                git url: 'https://github.com/zhangping99/myflaskapp.git', branch: 'main'
+                git url: 'https://github.com/super-sausage/myflaskapp.git', branch: 'main'
             }
         }
         stage('Fix pip') {
