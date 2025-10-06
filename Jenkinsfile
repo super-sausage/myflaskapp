@@ -55,8 +55,8 @@ pipeline {
             post {
                 always {
                     publishHTML(target: [
-                        allowMissing: false,
-                        alwaysLinkToLastBuild: false,
+                        allowMissing: true,
+                        alwaysLinkToLastBuild: true,
                         keepAll: true,
                         reportDir: 'htmlcov',
                         reportFiles: 'index.html',
