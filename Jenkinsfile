@@ -48,14 +48,14 @@ pipeline {
         stage('Test') {
             steps {
                 bat """
-                    ${PYTHON_PATH} -m pip install pytest
+                    ${PYTHON_PATH} -m pip install pytest pytest-cov
                     ${PYTHON_PATH} -m pytest --cov=app tests/ --cov-report=html
                 """
             }
             post {
                 always {
                     publishHTML(target: [
-                        allowMissing: true,
+                        allowMissing: true,  // 改为 true 避免构建失败
                         alwaysLinkToLastBuild: true,
                         keepAll: true,
                         reportDir: 'htmlcov',
